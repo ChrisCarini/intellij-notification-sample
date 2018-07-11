@@ -1,0 +1,34 @@
+plugins {
+    id 'org.jetbrains.intellij' version '0.3.4'
+}
+
+group 'com.chriscarini.jetbrains'
+version '0.0.1'
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.jetbrains.intellij'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    version 'IC-2018.1'
+    plugins[]
+    pluginName 'intellij-sample-notification'
+}
+
+patchPluginXml {
+    changeNotes """
+        <h4>[Unreleased]</h4>
+        
+        <h4>[0.0.1] - 2018-07-08</h4>
+        <h5>Added</h5>
+        <ol><li>Initial release.</li></ol>
+        """
+}
