@@ -7,7 +7,6 @@
     A sample plugin which displays a simple notification upon Project Open.
     ]]></description>
 
-    <idea-version since-build="181" until-build="181.*"/>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
