@@ -2,20 +2,16 @@ package com.chriscarini.jetbrains.samplenotification.project.component;
 
 import com.intellij.notification.Notification;
 import com.intellij.notification.NotificationType;
-import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.startup.StartupActivity;
+import org.jetbrains.annotations.NotNull;
 
-public class ProjectOpenNotifier implements ProjectComponent {
-    private final Project myProject;
 
-    public ProjectOpenNotifier(final Project project) {
-        myProject = project;
-    }
-
-    @Override
-    public void projectOpened() {
-        final Notification notification = new Notification("ProjectOpenNotification", "Project Opened Detected",
-                String.format("You just opened %s", myProject.getName()), NotificationType.INFORMATION);
-        notification.notify(myProject);
-    }
+public class ProjectOpenNotifier implements StartupActivity {
+  @Override
+  public void runActivity(@NotNull Project project) {
+    final Notification notification = new Notification("ProjectOpenNotification", "Project Opened Detected",
+        String.format("You just opened %s", project.getName()), NotificationType.INFORMATION);
+    notification.notify(project);
+  }
 }

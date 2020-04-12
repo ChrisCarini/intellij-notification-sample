@@ -1,22 +1,16 @@
 <idea-plugin>
-    <id>com.chriscarini.jetbrains.intellij-sample-notification</id>
-    <name>intellij-sample-notification</name>
-    <vendor url="https://jetbrains.chriscarini.com">Chris Carini</vendor>
+  <id>com.chriscarini.jetbrains.intellij-sample-notification</id>
+  <name>intellij-sample-notification</name>
+  <vendor email="jetbrains@chriscarini.com" url="https://jetbrains.chriscarini.com">Chris Carini</vendor>
 
-    <description><![CDATA[
+  <description><![CDATA[
     A sample plugin which displays a simple notification upon Project Open.
     ]]></description>
 
-    <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.platform</depends>
 
-    <extensions defaultExtensionNs="com.intellij">
-    </extensions>
-
-    <project-components>
-        <component>
-            <implementation-class>
-                com.chriscarini.jetbrains.samplenotification.project.component.ProjectOpenNotifier
-            </implementation-class>
-        </component>
-    </project-components>
+  <extensions defaultExtensionNs="com.intellij">
+    <postStartupActivity
+        implementation="com.chriscarini.jetbrains.samplenotification.project.component.ProjectOpenNotifier"/>
+  </extensions>
 </idea-plugin>
