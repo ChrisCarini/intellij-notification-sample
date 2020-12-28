@@ -42,6 +42,19 @@ intellij {
     changeNotes({ changelog.getUnreleased().toHTML() })
   }
 
+  runPluginVerifier {
+    ideVersions(pluginVerifierIdeVersions)
+  }
+
+  publishPlugin {
+    dependsOn("patchChangelog")
+    token(System.getenv("PUBLISH_TOKEN"))
+    // pluginVersion is based on the SemVer (https://semver.org) and supports pre-release labels, like 2.1.7-alpha.3
+    // Specify pre-release label to publish the plugin in a custom Release Channel automatically. Read more:
+    // https://jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#specifying-a-release-channel
+    channels(pluginVersion.split('-').getOrElse(1) { "default" }.split('.').first())
+  }
+
   // TODO (https://youtrack.jetbrains.com/issue/IDEA-252693) - Disabled this task because it was failing. See my
   //      comment on the above YouTrack issue, and thread here: https://jetbrains-platform.slack.com/archives/C5U8BM1MK/p1604722479347300?thread_ts=1602338567.267100&cid=C5U8BM1MK
   // Note: This gradle task is only needed if `SearchableConfigurable` is used,
