@@ -7,8 +7,8 @@ apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
 
-group 'com.chriscarini.jetbrains'
-version '2.3.0'
+group pluginGroup
+version pluginVersion
 
 sourceCompatibility = '11'
 
@@ -29,10 +29,10 @@ intellij {
   // see https://www.jetbrains.com/intellij-repository/releases/
   // and https://www.jetbrains.com/intellij-repository/snapshots/
   // To use/download EAP add '-EAP-SNAPSHOT' to the version, i.e. 'IU-191.6014.8-EAP-SNAPSHOT'
-  version '2020.3'
+  version platformVersion
 //  version 'IC-203.5981.114-EAP-SNAPSHOT'
   plugins[]
-  pluginName 'intellij-sample-notification'
+  pluginName pluginName_
 
   // TODO (https://youtrack.jetbrains.com/issue/IDEA-252693) - Disabled this task because it was failing. See my
   //      comment on the above YouTrack issue, and thread here: https://jetbrains-platform.slack.com/archives/C5U8BM1MK/p1604722479347300?thread_ts=1602338567.267100&cid=C5U8BM1MK
