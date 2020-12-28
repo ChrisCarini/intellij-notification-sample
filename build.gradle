@@ -82,7 +82,7 @@ tasks.withType(JavaCompile) {
                                '-Xlint:-classfile']) //ignore warnings from dependencies
 }
 
-if (System.getenv('IS_CI') != "True") {
+if (System.getenv('CI') != "true") {
   // The below file (jetbrainsCredentials.gradle) should contain the below:
   //    project.ext.set("intellijPublishUsername", "YOUR_USERNAME_HERE")
   //    project.ext.set("intellijPublishPassword", "YOUR_PASSWORD_HERE")
