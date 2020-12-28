@@ -1,28 +1,16 @@
-buildscript {
-  ext {
-    javaVersion = '11'
-
-    // see https://www.jetbrains.com/intellij-repository/releases/
-    // and https://www.jetbrains.com/intellij-repository/snapshots/
-    // To use/download EAP add '-EAP-SNAPSHOT' to the version, i.e. 'IU-191.6014.8-EAP-SNAPSHOT'
-    intellijVersion = '2020.3'
-//    intellijVersion = 'IC-203.5981.114-EAP-SNAPSHOT'
-  }
-}
-
 plugins {
   id 'java'
   id 'org.jetbrains.intellij' version '0.6.5'
 }
 
-group 'com.chriscarini.jetbrains'
-version '2.3.0'
-
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
 
-sourceCompatibility = javaVersion
+group 'com.chriscarini.jetbrains'
+version '2.3.0'
+
+sourceCompatibility = '11'
 
 repositories {
   mavenCentral()
@@ -38,7 +26,11 @@ dependencies {
 }
 
 intellij {
-  version intellijVersion
+  // see https://www.jetbrains.com/intellij-repository/releases/
+  // and https://www.jetbrains.com/intellij-repository/snapshots/
+  // To use/download EAP add '-EAP-SNAPSHOT' to the version, i.e. 'IU-191.6014.8-EAP-SNAPSHOT'
+  version '2020.3'
+//  version 'IC-203.5981.114-EAP-SNAPSHOT'
   plugins[]
   pluginName 'intellij-sample-notification'
 
