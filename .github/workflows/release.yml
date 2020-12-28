@@ -12,6 +12,7 @@ jobs:
   release:
     name: Publish Plugin
     runs-on: ubuntu-latest
+    environment: PROD_PUBLISH_PLUGIN
     steps:
 
       # Setup Java 11 environment for the next steps
