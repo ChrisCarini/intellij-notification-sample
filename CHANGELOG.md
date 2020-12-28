@@ -5,6 +5,7 @@
 ## [Unreleased]
 
 ### Added
+
 - GitHub build & release workflows
 
 ### Changed
@@ -12,7 +13,9 @@
 - Upgrading to 2020.3
 - Upgrading IntelliJ Gradle plugin to 0.6.5
 - Upgrading Java 11 - see <a href="https://blog.jetbrains.com/platform/2020/09/intellij-project-migrates-to-java-11/">
-  the JetBrains Platform blog post announcing the migration</a></li>### Deprecated
+  the JetBrains Platform blog post announcing the migration</a>
+
+### Deprecated
 
 ### Removed
 
