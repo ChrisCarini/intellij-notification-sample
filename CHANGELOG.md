@@ -5,20 +5,7 @@
 ## [Unreleased]
 
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-
-## [2.3.0] - 2020-12-25
-
-### Added
+- GitHub build & release workflows
 
 ### Changed
 
