@@ -1,11 +1,15 @@
+//import org.jetbrains.changelog.date
+
 plugins {
   id 'java'
   id 'org.jetbrains.intellij' version '0.6.5'
+  id 'org.jetbrains.changelog' version '0.6.2'
 }
 
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'org.jetbrains.changelog'
 
 group 'com.chriscarini.jetbrains'
 version '2.3.0'
@@ -34,6 +38,10 @@ intellij {
   plugins[]
   pluginName 'intellij-sample-notification'
 
+  patchPluginXml {
+    changeNotes({ changelog.getUnreleased().toHTML() })
+  }
+
   // TODO (https://youtrack.jetbrains.com/issue/IDEA-252693) - Disabled this task because it was failing. See my
   //      comment on the above YouTrack issue, and thread here: https://jetbrains-platform.slack.com/archives/C5U8BM1MK/p1604722479347300?thread_ts=1602338567.267100&cid=C5U8BM1MK
   // Note: This gradle task is only needed if `SearchableConfigurable` is used,
@@ -44,29 +52,21 @@ intellij {
   }
 }
 
+changelog {
+  version = "${project.version}"
+  path = "${project.projectDir}/CHANGELOG.md"
+//  header = { "[${project.version}] - ${date()}" }
+  header = { "[${project.version}] - ${new Date().format('yyyy-MM-dd')}" }
+  headerParserRegex = ~/\d+\.\d+\.\d+/
+  itemPrefix = "-"
+  keepUnreleasedSection = true
+  unreleasedTerm = "[Unreleased]"
+  groups = ["Added", "Changed", "Deprecated", "Removed", "Fixed", "Security"]
+}
+
 //runIde {
 //    jbrVersion 'jbrex8u202b1483.21'
 //}
-
-patchPluginXml {
-  changeNotes """
-        <h4>[$version] - ${new Date().format('yyyy-MM-dd')}</h4>
-        <h5>Upgrade</h5>
-        <ol>
-        <li>Upgrading to 2020.3</li>
-        <li>Upgrading IntelliJ Gradle plugin to 0.6.5</li>
-        <li>Upgrading Java 11 - see <a href="https://blog.jetbrains.com/platform/2020/09/intellij-project-migrates-to-java-11/">the JetBrains Platform blog post announcing the migration</a></li>
-        </ol>
-        <h5>Added</h5>
-        <ol>
-        <li>N/A</li>
-        </ol>
-        <h5>Fixed</h5>
-        <ol>
-        <li>N/A</li>
-        </ol>
-        """
-}
 
 // The below will surface warnings as errors - I want
 // this in the project to allow us to catch deprecation
