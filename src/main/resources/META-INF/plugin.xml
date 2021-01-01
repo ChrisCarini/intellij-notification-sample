@@ -1,6 +1,6 @@
 <idea-plugin>
   <id>com.chriscarini.jetbrains.intellij-sample-notification</id>
-  <name>intellij-sample-notification</name>
+  <name>sample-notification</name>
   <vendor email="jetbrains@chriscarini.com" url="https://jetbrains.chriscarini.com">Chris Carini</vendor>
 
   <description><![CDATA[

@@ -3,23 +3,6 @@
 # IntelliJ Platform Plugin Template Changelog
 
 ## [Unreleased]
-### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-## [2.3.1] - 2021-01-01
-
-### Changed
-- Change plugin name to remove `IntelliJ` per JetBrains guidance.
-
-## [2.3.0] - 2020-12-31
 
 ### Added
 
@@ -27,6 +10,7 @@
 
 ### Changed
 
+- Change plugin name to remove `IntelliJ` (ie, `intellij-sample-notification` -> `sample-notification`) per JetBrains guidance.
 - Upgrading to 2020.3
 - Upgrading IntelliJ Gradle plugin to 0.6.5
 - Upgrading Java 11 - see <a href="https://blog.jetbrains.com/platform/2020/09/intellij-project-migrates-to-java-11/">
