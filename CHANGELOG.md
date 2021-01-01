@@ -3,17 +3,10 @@
 # IntelliJ Platform Plugin Template Changelog
 
 ## [Unreleased]
-### Added
 
 ### Changed
+- Change plugin name to remove `IntelliJ` per JetBrains guidance.
 
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
 ## [2.3.0] - 2020-12-31
 
 ### Added
