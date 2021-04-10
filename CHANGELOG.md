@@ -6,6 +6,18 @@
 ### Added
 
 ### Changed
+
+### Deprecated
+
+### Removed
+
+### Fixed
+
+### Security
+## [2.4.0] - 2021-04-10
+### Added
+
+### Changed
 - Upgrading to 2021.1
 - Upgrading IntelliJ Gradle plugin to 0.7.2
 
