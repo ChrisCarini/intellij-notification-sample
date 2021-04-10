@@ -6,6 +6,8 @@
 ### Added
 
 ### Changed
+- Upgrading to 2021.1
+- Upgrading IntelliJ Gradle plugin to 0.7.2
 
 ### Deprecated
 
