@@ -25,7 +25,7 @@ jobs:
 
       - name: Upload Artifact to Distributions
         if: github.event_name != 'pull_request'
-        uses: actions/upload-artifact@v2.2.3
+        uses: actions/upload-artifact@v2.2.4
         with:
           # TODO: This uploads a zip called `distributions`; see what we can do to just upload the produced plugin itself.
           name: distributions
