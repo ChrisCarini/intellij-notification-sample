@@ -158,7 +158,7 @@ configurations {
 dependencies {
     provided localGroovy()
     provided gradleApi()
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'junit', name: 'junit', version: '4.13.2'
 }
 
 // Configure IntelliJ to be aware of Groovy and Gradle APIs to allow resolution and code completion of symbols in build.gradle
