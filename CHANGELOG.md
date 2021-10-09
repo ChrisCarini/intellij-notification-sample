@@ -17,26 +17,12 @@
 
 ## [2.5.0] - 2021-10-09
 ### Added
-
-### Changed
-
-### Deprecated
-
-### Removed
-
-### Fixed
-
-### Security
-
-## [2.5.0] - 2021-10-09
-### Added
 - Restructured  file to extract all variables into  file.
 - Adding ability to publish to different channels based on SemVer pre-release labels.
 - Adding [JetBrains Plugin Signing](https://plugins.jetbrains.com/docs/intellij/plugin-signing.html)
 - Update Dependabot to include Gradle dependencies.
 - Adding GitHub build & release workflows.
 - Adding JetBrains Qodana (experimental, testing only)
-
 
 ### Changed
 - Upgrading Gradle to 6.6
