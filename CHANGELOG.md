@@ -6,6 +6,7 @@
 ### Added
 
 ### Changed
+- Remove `description` from `plugin.xml` _(value is taken from `README.md` as part of Gradle `patchPluginXml` task)_
 
 ### Deprecated
 
