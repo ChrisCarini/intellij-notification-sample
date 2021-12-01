@@ -6,8 +6,6 @@
 ### Added
 
 ### Changed
-- Upgrading IntelliJ to 2021.3
-- Remove `description` from `plugin.xml` _(value is taken from `README.md` as part of Gradle `patchPluginXml` task)_
 
 ### Deprecated
 
@@ -16,6 +14,11 @@
 ### Fixed
 
 ### Security
+
+## [2.5.2] - 2021-12-01
+### Changed
+- Upgrading IntelliJ to 2021.3
+- Remove `description` from `plugin.xml` _(value is taken from `README.md` as part of Gradle `patchPluginXml` task)_
 
 ## [2.5.0] - 2021-10-09
 ### Added
