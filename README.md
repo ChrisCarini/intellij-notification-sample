@@ -8,7 +8,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ChrisCarini/intellij-notification-sample/IntelliJ%20Plugin%20Compatibility?label=IntelliJ%20Plugin%20Compatibility&logo=GitHub&style=flat-square)](https://github.com/ChrisCarini/intellij-notification-sample/actions?query=workflow%3A%22IntelliJ+Plugin+Compatibility%22)
 
 <!-- Plugin description -->
-A JetBrains plugin which shows a simple notification on project open.
+A plugin for JetBrains IDEs providing a simple notification on project open.
 <!-- Plugin description end -->
 
 Tested in IntelliJ, but _should_ work on other JetBrains IDEs.
