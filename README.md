@@ -1,6 +1,6 @@
 # IntelliJ Sample Notification
 
-[![GitHub License](https://img.shields.io/github/license/ChrisCarini/intellij-notification-sample?style=flat-square)](https://github.com/ChrisCarini/intellij-notification-sample/blob/master/LICENSE)
+[![GitHub License](https://img.shields.io/github/license/ChrisCarini/intellij-notification-sample?style=flat-square)](https://github.com/ChrisCarini/intellij-notification-sample/blob/main/LICENSE)
 [![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/v/10924-intellij-sample-notification?label=Latest%20Plugin%20Release&style=flat-square)](https://plugins.jetbrains.com/plugin/10924-intellij-sample-notification)
 [![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/r/rating/10924-intellij-sample-notification?style=flat-square)](https://plugins.jetbrains.com/plugin/10924-intellij-sample-notification)
 [![JetBrains IntelliJ Plugins](https://img.shields.io/jetbrains/plugin/d/10924-intellij-sample-notification?style=flat-square)](https://plugins.jetbrains.com/plugin/10924-intellij-sample-notification)
