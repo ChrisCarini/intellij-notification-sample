@@ -2,7 +2,7 @@
 
 # IntelliJ Platform Plugin Template Changelog
 
-## Unreleased
+## [Unreleased]
 
 ### Added
 
