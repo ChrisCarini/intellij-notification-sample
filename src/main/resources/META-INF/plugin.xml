@@ -6,6 +6,13 @@
   <depends>com.intellij.modules.platform</depends>
 
   <extensions defaultExtensionNs="com.intellij">
+    <notificationGroup
+        id="ProjectOpenNotification"
+        displayType="BALLOON"
+        isLogByDefault="true"
+        bundle="messages.sampleNotification"
+        key="com.chriscarini.jetbrains.samplenotification.notification.group.name"
+    />
     <postStartupActivity
         implementation="com.chriscarini.jetbrains.samplenotification.project.component.ProjectOpenNotifier"/>
   </extensions>
